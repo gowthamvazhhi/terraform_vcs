@@ -14,7 +14,7 @@ output "Ec2_instance_public_ip" {
 output "Ec2_instance_public_dns" {
   description = "Public dns of instance"
   value       = aws_instance.Session.public_dns
-} */
+} 
 
 output "Ec2_instance_public_ip" {
   description = "Public ip of instance"
@@ -28,4 +28,4 @@ output "Ec2_instance_public_dns" {
 output "ec2instanceusingsplat" {
   description = "Public dns of instance"
   value       = aws_instance.Session[*].public_dns
-}
+}*/
