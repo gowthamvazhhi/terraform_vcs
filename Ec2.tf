@@ -23,5 +23,5 @@ data "aws_ami" "amzlinux2" {
 
 resource "aws_instance" "Session" {
   ami           = data.aws_ami.amzlinux2.id
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
 }
