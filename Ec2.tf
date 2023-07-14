@@ -25,3 +25,14 @@ resource "aws_instance" "Session" {
   ami           = data.aws_ami.amzlinux2.id
   instance_type = "t3.micro"
 }
+
+resource "aws_s3_bucket" "example" {
+  bucket = "gowt-terraform-jul14"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
+
+
