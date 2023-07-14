@@ -26,13 +26,3 @@ resource "aws_instance" "Session" {
   instance_type = "t3.micro"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = "gowt-terraform-jul14"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
-}
-
-
